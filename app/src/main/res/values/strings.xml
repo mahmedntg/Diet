@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">DietProj</string>
+    <string name="user_information">معلومات المستخدم</string>
+    <string name="gender">الجنس</string>
+    <string name="male">ذكر</string>
+    <string name="female">انثى</string>
+    <string name="name">الاسم</string>
+    <string name="weight_in_kg">الوزن (ك.ج)</string>
+    <string name="height_in_cm">الطول (سنتيميتر)</string>
+    <string name="age">العمر</string>
+    <string name="save">حفظ</string>
+    <string name="banana">موزة</string>
+    <string name="apple">تفاحة</string>
+    <string name="peach">كمثرى</string>
+    <string name="weight_goal_">الهدف في الوزن</string>
+    <string name="shape_detect">تحديد شكل الجسم</string>
+    <string name="set_point">حفظ النقطة</string>
+    <string name="step1">الخطوة الأولى: ألتقط صورتك كما هو موضح في الصورة على اليسار</string>
+    <string name="step2">الخطوة الثانية:\nباستخدام اصبعك قم بتحديد نقطة بداية الصدر ونهايته</string>
+    <string name="step3">الخطوة الثالثة:\nباستخدام اصبعك قم بتحديد نقطة بداية الخصر ونهايته</string>
+    <string name="step4">الخطوة الرابعة:\nباستخدام اصبعك قم بتحديد نقطة بداية الورك ونهايته</string>
+    <string name="set_point_1">حدد النقطة الأولى</string>
+    <string name="set_point_2">حدد النقطة الثانية</string>
+    <string name="change_info">تغيير معلومات المستخدم</string>
+    <string name="change_type">تحديد شكل الجسم</string>
+</resources>
