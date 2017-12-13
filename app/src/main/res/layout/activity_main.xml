@@ -124,18 +124,22 @@
 
         </LinearLayout>
 
-        <TextView
-            android:layout_width="match_parent"
+        <Button
+            android:layout_marginTop="15dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:padding="10dp"
-            android:text="Based on your information , we recommended this food for you:\n 1- water\n 2- tea without sugar\n 3- banana without seek of couse\n4- rice with chicken breast\n5- falafel\n for 60 years and you will lose your life. " />
+            android:layout_gravity="center"
+            android:onClick="dietInfo"
+            android:background="@color/buttonColor"
+            android:text="@string/diet_info" />
 
         <Button
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:onClick="changeInfo"
+            android:background="@color/buttonColor"
+            android:layout_marginTop="15dp"
             android:text="@string/change_info" />
 
         <Button
@@ -145,6 +149,7 @@
             android:onClick="changeBody"
             android:text="@string/change_type"
             android:layout_marginTop="15dp"
-            android:layout_marginBottom="15dp"/>
+            android:layout_marginBottom="15dp"
+            android:background="@color/buttonColor"/>
     </LinearLayout>
 </ScrollView>

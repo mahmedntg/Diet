@@ -20,7 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="4"
-            android:textColor="#075c9e"
+            android:textColor="@color/colorAccent"
             android:text="Description\nShould\nbe\nhere"
             android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
         <ImageView

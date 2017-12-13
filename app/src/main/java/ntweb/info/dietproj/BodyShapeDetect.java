@@ -43,7 +43,7 @@ public class BodyShapeDetect extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_body_shape_detect);
-        getSupportActionBar().setTitle(getString(R.string.shape_detect));
+       // getSupportActionBar().setTitle(getString(R.string.shape_detect));
         Log.v("BodyShapeDetect","Warning the activiy start!");
         // get refrence to design component
         ivDesc = (ImageView) findViewById(R.id.ivDesc);

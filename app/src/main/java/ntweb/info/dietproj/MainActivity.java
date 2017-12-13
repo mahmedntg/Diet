@@ -97,4 +97,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(userInfoActivity);
         finish();
     }
+    public void dietInfo(View v)
+    {
+        Intent dietInfoActivity = new Intent(getBaseContext(), DietInfoActivity.class);
+        startActivity(dietInfoActivity);
+        finish();
+    }
+
 }

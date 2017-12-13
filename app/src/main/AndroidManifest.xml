@@ -15,16 +15,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".UserInfotmation"></activity>
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".UserInfotmation"
+            android:label="@string/info" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/main"></activity>
+        <activity
+            android:name=".BodyShapeDetect"
+            android:label="@string/shape_detect" />
+        <activity
+            android:name=".ShowCurrentBodyType"
+            android:label="@string/shape_view" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".BodyShapeDetect"></activity>
-        <activity android:name=".ShowCurrentBodyType"></activity>
+        <activity android:name=".DietInfoActivity" android:label="@string/diet_info"></activity>
     </application>
 
 </manifest>
