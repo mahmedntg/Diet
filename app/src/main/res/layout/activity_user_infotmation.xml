@@ -36,7 +36,7 @@
             android:text="@string/name" />
     </LinearLayout>
     <LinearLayout android:layout_marginRight="15dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -197,6 +197,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:inputType="textPassword"
+            android:hint="6 to 10 characters!"
             android:ems="10"
             android:text="" />
         <TextView
@@ -208,10 +209,11 @@
     </LinearLayout>
 
     <Button android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
         android:id="@+id/btnSave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_gravity="start"
         android:onClick="save"
         android:background="@color/buttonColor"
         android:text="@string/save" />

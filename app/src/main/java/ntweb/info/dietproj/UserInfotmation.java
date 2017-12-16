@@ -81,19 +81,21 @@ public class UserInfotmation extends AppCompatActivity {
         if (etName.getText().toString().length() < 1 || etWeight.getText().toString().length() <= 0 ||
                 etAge.getText().toString().length() <= 0 || etGoal.getText().toString().length() <= 0 ||
                 etHeight.getText().toString().length() <= 0) {
-            if (TextUtils.isEmpty(userName) &&
-                    (etUserName.getText().toString().length() < 1 || etPassword.getText().toString().length() < 1))
-                Toast.makeText(getBaseContext(), "All Fields are requied!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getBaseContext(), "All Fields are requied!", Toast.LENGTH_SHORT).show();
+        } else if (TextUtils.isEmpty(userName) &&
+                (etUserName.getText().toString().length() < 1 || etPassword.getText().toString().length() < 1)) {
+            Toast.makeText(getBaseContext(), "All Fields are requied!", Toast.LENGTH_SHORT).show();
+        } else if (etPassword.getText().toString().length() < 6 || etPassword.getText().toString().length() > 10) {
+            Toast.makeText(getBaseContext(), "password should be between 6 and 10 characters", Toast.LENGTH_SHORT).show();
         } else {
-
             SharedPreferences.Editor editor = sharedPref.edit();
             editor.putString("name", etName.getText().toString());
             editor.putString("weight", etWeight.getText().toString());
             editor.putString("height", etHeight.getText().toString());
             editor.putString("age", etAge.getText().toString());
             editor.putString("goal", etGoal.getText().toString());
-            editor.putString("userName", TextUtils.isEmpty(userName)?etUserName.getText().toString():userName);
-            editor.putString("password", TextUtils.isEmpty(password)? etPassword.getText().toString() :password);
+            editor.putString("userName", TextUtils.isEmpty(userName) ? etUserName.getText().toString() : userName);
+            editor.putString("password", TextUtils.isEmpty(password) ? etPassword.getText().toString() : password);
 
             int sGender = 1;
             if (rbFemale.isChecked())

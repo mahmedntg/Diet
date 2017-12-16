@@ -1,13 +1,10 @@
 package ntweb.info.dietproj;
 
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.preference.Preference;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -60,11 +57,11 @@ public class MainActivity extends AppCompatActivity {
         }
         else if (body == 3)
         {
-            bodyType = getString(R.string.peach);
+            bodyType = getString(R.string.pear);
         }
         else if (body == 4)
         {
-            bodyType = "Hourglass";
+            bodyType = getString(R.string.hourGlass);
         }
 
 
